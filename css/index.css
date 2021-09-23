@@ -4,8 +4,12 @@
   --clr-black: #000000;
   --clr-primary: #4a90e2;
   --clr-secondary: #42515f;
+  --clr-lightgray: #ccc;
   --clr-gray: #969696;
+  --clr-darkgray: #808080;
+  --clr-red: #ff0000;
   --shadow: 0px 4px 10px 0px rgb(0 0 0 / 15%);
+  --input-border: 1px solid var(--clr-lightgray);
   --spacing: 0.5px;
 }
 * {
