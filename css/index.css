@@ -138,8 +138,16 @@ tr:first-child th:first-child {
 td {
   font: normal normal normal 14px/21px Roboto;
   text-align: left;
-  padding: 0.5rem 0;
+  padding: 0.75rem 0;
 }
 tr:not(:first-child) td:first-child {
   padding-left: 1rem;
+}
+/* Action buttons */
+.action-group {
+  cursor: pointer;
+}
+.action-group img:first-child {
+  margin-right: 0.75rem;
+  margin-left: 0;
 }
