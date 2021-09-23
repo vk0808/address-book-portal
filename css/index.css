@@ -144,7 +144,7 @@ tr:not(:first-child) td:first-child {
   padding-left: 1rem;
 }
 /* Action buttons */
-.action-group {
+.action-group img {
   cursor: pointer;
 }
 .action-group img:first-child {
