@@ -1,3 +1,16 @@
+// Global variables
+let isUpdate = false;
+let personDetailsObj = {
+  _name: '',
+  _phoneNumber: '',
+  _address: '',
+  _city: '',
+  _state: '',
+  _zip: '',
+  _id: ''
+};
+
+
 // add eventListener as the page loads
 window.addEventListener('DOMContentLoaded', (event) => {
   validateName();
@@ -43,4 +56,32 @@ function validateNumber() {
 const setTextValue = (id, value) => {
   let textError = document.querySelector(id);
   textError.textContent = value;
+}
+
+// function to save to local storage
+const save = (event) => {
+  event.preventDefault();
+  event.stopPropagation();
+  try {
+    setPersonDetailsObj();
+  } catch (e) {
+    return;
+  }
+}
+
+// function to create employee object and store values by getting it from input fields  
+const setPersonDetailsObj = () => {
+  personDetailsObj._name = getInputValueById('#name');
+  personDetailsObj._phoneNumber = getInputValueById('#tel');
+  personDetailsObj._address = getInputValueById('#address');
+  personDetailsObj._city = getInputValueById('#city');
+  personDetailsObj._state = getInputValueById('#state');
+  personDetailsObj._zip = getInputValueById('#zip');
+  console.log(personDetailsObj);
+}
+
+// function to return values of selected items using querySelector
+const getInputValueById = (id) => {
+  let value = document.querySelector(id).value;
+  return value;
 }
