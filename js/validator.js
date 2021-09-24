@@ -15,6 +15,7 @@ let personDetailsObj = {
 window.addEventListener('DOMContentLoaded', (event) => {
   validateName();
   validateNumber();
+  checkForUpdate();
 });
 
 
