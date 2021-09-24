@@ -15,6 +15,10 @@
     <!-- External CSS -->
     <link rel="stylesheet" href="../css/index.css" />
     <link rel="stylesheet" href="../css/addPerson.css" />
+
+    <!-- External Javascript -->
+    <script defer src="../js/PersonData.js"></script>
+    <script defer src="../js/validator.js"></script>
   </head>
   <body>
     <!-- Header -->
@@ -34,7 +38,7 @@
       <div class="form-head">
         Person Address Form
         <a class="cancel" href="./index.html">
-          <img src="../assets/icons/macos-close.png" alt="Clase" />
+          <img src="../assets/icons/macos-close.png" alt="Close" />
         </a>
       </div>
       <form
@@ -67,7 +71,7 @@
             <div class="group-error">
               <input type="tel" class="input" id="tel" name="tel" required />
               <div>
-                <error-output class="text-error" for="tel"></error-output>
+                <error-output class="tel-error" for="tel"></error-output>
               </div>
             </div>
           </div>

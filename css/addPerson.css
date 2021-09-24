@@ -103,3 +103,6 @@ error-output {
   font-style: italic;
   color: var(--clr-red);
 }
+.group-error div {
+  margin-bottom: 0.75rem;
+}
