@@ -23,7 +23,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
 // function to create table and append it to the innerHTML 
 const createInnerHtml = () => {
   // check if length is zero
-  if (empPayrollList.length == 0) {
+  if (addressBookList.length == 0) {
     document.querySelector('#display').innerHTML = "";
     return
   };
