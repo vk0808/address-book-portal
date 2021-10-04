@@ -22,7 +22,11 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
 // function to create table and append it to the innerHTML 
 const createInnerHtml = () => {
-  if (addressBookList.length == 0) return;
+  // check if length is zero
+  if (empPayrollList.length == 0) {
+    document.querySelector('#display').innerHTML = "";
+    return
+  };
   // column headings
   const headerHtml = "<tr><th>Full Name</th><th>Address</th><th>City</th><th>State</th><th>ZIP</th><th>Phone Number</th><th></th></tr>";
 
